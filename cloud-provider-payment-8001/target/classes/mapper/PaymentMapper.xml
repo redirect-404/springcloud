@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cloud.provider.dao.PaymentDao">
+
+    <resultMap id="paymentResult" type="com.cloud.provider.pojo.Payment">
+        <id  column="id" property="id" jdbcType="BIGINT"/>
+        <id column="ordernum" property="orderNum" jdbcType="VARCHAR"/>
+    </resultMap>
+    <select id="getPaymentById" parameterType="java.lang.Long"  resultMap="paymentResult">
+        select * from test.payment where id = #{id}
+    </select>
+
+    <insert id="addPayment" parameterType="com.cloud.provider.pojo.Payment" useGeneratedKeys="true" keyProperty="id">
+        insert into test.payment(ordernum)  values(#{orderNum});
+    </insert>
+</mapper>
+
