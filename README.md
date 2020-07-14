@@ -8,4 +8,6 @@ spring cloud v0.2 重构相同目录
 
 spring cloud v0.3 Eurake添加与注册
 
+spring cloud v0.4 Eurake集群添加
+
 
