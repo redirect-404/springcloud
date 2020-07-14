@@ -10,4 +10,6 @@ spring cloud v0.3 Eurake添加与注册
 
 spring cloud v0.4 Eurake集群添加
 
+spring cloud v0.5 Eurake集群服务注册
+
 
